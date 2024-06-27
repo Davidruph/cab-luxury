@@ -80,3 +80,94 @@
   font-weight: 400;
   line-height: 30px;
 }
+.for-riders-head {
+  font-family: Satoshi-Regular;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000;
+}
+.for-riders-title {
+  font-family: Satoshi-Regular;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+.for-riders-base {
+  font-family: Satoshi-Regular;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #333333;
+}
+.for-riders-learn-more {
+  font-family: Satoshi-Regular;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000;
+  width: 179px;
+  height: 64px;
+  padding: 16px 24px 16px 24px;
+  border-radius: 60px;
+  opacity: 0px;
+  background-color: #fafafa;
+}
+.for-riders-learn-more-action {
+  font-family: Satoshi-Regular;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  width: 225px;
+  height: 64px;
+  padding: 16px 24px 16px 24px;
+  border-radius: 60px;
+  opacity: 0px;
+}
+.for-riders-schedule {
+  font-family: Satoshi-Regular;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #101828;
+}
+.for-riders-schedule-text {
+  font-family: Satoshi-Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #333333;
+}
+.index-hero-img {
+  background-image: url(../images/index-hero-img.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.nav-links {
+  font-family: Satoshi-Regular;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.6px;
+  color: #000;
+}
+.active-link {
+  border-bottom: 2px solid #4b0a20;
+}
+.index-hero-header {
+  font-family: Satoshi-Regular;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+.login-text {
+  font-family: Satoshi-Regular;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}

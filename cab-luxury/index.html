@@ -14,24 +14,321 @@
     <title>Home Page</title>
   </head>
   <body>
-    <section id="footerContent"></section>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $(document).ready(function () {
-        $.ajax({
-          url: "footer.html",
-          success: function (data) {
-            $("#footerContent").html(data);
-          },
-          error: function () {
-            console.log("An error occurred while loading the footer.");
-          },
-        });
-      });
-    </script>
+    <!-- hero section starts -->
+    <section class="flex flex-col md:flex-row w-full h-full md:h-[720px]">
+      <div class="w-full bg-[#fff]">
+        <div
+          class="hero-header h-[115px] flex justify-between items-center px-2 md:px-10 lg:px-20"
+        >
+          <div><img src="images/logo.svg" alt="" /></div>
+          <div class="flex gap-5 md:gap-10">
+            <a href="#" class="nav-links active-link">Home</a>
+            <a href="#" class="nav-links hover:border-b-2 border-[#4b0a20]"
+              >About Us</a
+            >
+            <a href="#" class="nav-links hover:border-b-2 border-[#4b0a20]"
+              >Features</a
+            >
+            <a href="#" class="nav-links hover:border-b-2 border-[#4b0a20]"
+              >Support</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col gap-7 pt-16 justify-start items-start px-5 md:px-10 lg:px-20"
+        >
+          <h2 class="index-hero-header">
+            Your Reliable Ride, <br />
+            Anytime, Anywhere
+          </h2>
+
+          <p class="for-riders-base">
+            Join our team of drivers and start earning with flexible hours.
+            <br />
+            Download our app to get started today!
+          </p>
+
+          <div class="flex gap-3 mb-3 w-full">
+            <a
+              href="#"
+              class="for-riders-learn-more flex justify-center items-center gap-2"
+              >Learn More <img src="images/action-icon.svg" alt=""
+            /></a>
+            <a
+              href="#"
+              class="for-riders-learn-more-action flex justify-center items-center gap-2 bg-[#4B0A20] text-white pr-2"
+              >Become a Driver <img src="images/action-icon.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full index-hero-img">
+        <div class="flex gap-5 justify-center items-center w-full py-5">
+          <img src="images/flag.svg" alt="" />
+          <a href="#" class="text-white">Log in</a>
+          <a
+            href="#"
+            class="for-riders-learn-more-action flex justify-center items-center gap-2 bg-[#4B0A20] text-white"
+            >Become a Driver <img src="images/action-icon.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- hero section ends -->
+
+    <!-- for passengers start -->
+    <section class="bg-[#EDE7E933] w-full">
+      <div class="py-20 flex flex-col px-5 md:px-10 lg:px-20 gap-5">
+        <div class="flex flex-col gap-5">
+          <p class="for-riders-head text-[#990034]">For Passengers</p>
+          <h1 class="for-riders-title">Experience the Future of Travel</h1>
+          <p class="for-riders-base">
+            Powerful, self-serve product and growth analytics to help you
+            convert, engage, and <br />
+            retain more users. Trusted by over 4,000 startups.
+          </p>
+
+          <div class="flex gap-10 items-center justify-start pt-5">
+            <div class="flex flex-col gap-3 w-full">
+              <div
+                class="h-auto hover:border-[#990034] border-[#990034] border-l-4"
+              >
+                <div class="flex flex-col gap-3 pt-2">
+                  <p class="for-riders-schedule pl-5">Flexible Schedule</p>
+                  <p class="for-riders-schedule-text pl-5">
+                    Set your own hours and drive whenever it suits you. Enjoy
+                    the freedom to work <br />
+                    as much or as little as you want
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="h-auto hover:border-[#990034] border-[#F2F4F7] border-l-4"
+              >
+                <div class="flex flex-col gap-3 pt-2">
+                  <p class="for-riders-schedule pl-5">Competitive Earnings</p>
+                  <p class="for-riders-schedule-text pl-5">
+                    Maximize your income with competitive fares and incentives.
+                    Earn more by <br />
+                    driving during peak hours and high-demand areas.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="h-auto hover:border-[#990034] border-[#F2F4F7] border-l-4"
+              >
+                <div class="flex flex-col gap-3 pt-2">
+                  <p class="for-riders-schedule pl-5">Weekly Payments</p>
+                  <p class="for-riders-schedule-text pl-5">
+                    Get paid regularly with our convenient weekly payment
+                    system. No more <br />
+                    waiting until the end of the month.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="h-auto hover:border-[#990034] border-[#F2F4F7] border-l-4"
+              >
+                <div class="flex flex-col gap-3 pt-2">
+                  <p class="for-riders-schedule pl-5">Safe and Secure</p>
+                  <p class="for-riders-schedule-text pl-5">
+                    Drive with peace of mind knowing that both you and your
+                    passengers are <br />
+                    protected with our robust safety features and secure payment
+                    system
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hidden lg:flex w-full">
+              <img src="images/for-passengers.svg" class="w-full" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- for passengers end -->
+
+    <!-- for drivers start -->
+    <section class="bg-[#fff]">
+      <div class="py-20 flex flex-col px-5 md:px-10 lg:px-20 gap-5">
+        <div class="flex flex-col gap-5">
+          <p class="for-riders-head">For Drivers</p>
+          <h1 class="for-riders-title">
+            Drive with Us and Transform Your <br />
+            Earnings
+          </h1>
+          <p class="for-riders-base">
+            Powerful, self-serve product and growth analytics to help you
+            convert, engage, and <br />
+            retain more users. Trusted by over 4,000 startups.
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="#"
+              class="for-riders-learn-more flex justify-center items-center gap-2"
+              >Learn More <img src="images/action-icon.svg" alt=""
+            /></a>
+            <a
+              href="#"
+              class="for-riders-learn-more-action flex justify-center items-center gap-2 bg-[#4B0A20] text-white"
+              >Download the App <img src="images/action-icon.svg" alt=""
+            /></a>
+          </div>
+
+          <div class="flex gap-10 items-center justify-start pt-10">
+            <div class="hidden lg:flex w-full">
+              <img src="images/for-drivers-img.svg" class="w-full" alt="" />
+            </div>
+            <div class="flex flex-col gap-3 w-full">
+              <div
+                class="h-auto hover:border-[#990034] border-[#990034] border-l-4"
+              >
+                <div class="flex flex-col gap-3 pt-2">
+                  <p class="for-riders-schedule pl-5">Flexible Schedule</p>
+                  <p class="for-riders-schedule-text pl-5">
+                    Set your own hours and drive whenever it suits you. Enjoy
+                    the freedom to work <br />
+                    as much or as little as you want
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="h-auto hover:border-[#990034] border-[#F2F4F7] border-l-4"
+              >
+                <div class="flex flex-col gap-3 pt-2">
+                  <p class="for-riders-schedule pl-5">Competitive Earnings</p>
+                  <p class="for-riders-schedule-text pl-5">
+                    Maximize your income with competitive fares and incentives.
+                    Earn more by <br />
+                    driving during peak hours and high-demand areas.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="h-auto hover:border-[#990034] border-[#F2F4F7] border-l-4"
+              >
+                <div class="flex flex-col gap-3 pt-2">
+                  <p class="for-riders-schedule pl-5">Weekly Payments</p>
+                  <p class="for-riders-schedule-text pl-5">
+                    Get paid regularly with our convenient weekly payment
+                    system. No more <br />
+                    waiting until the end of the month.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="h-auto hover:border-[#990034] border-[#F2F4F7] border-l-4"
+              >
+                <div class="flex flex-col gap-3 pt-2">
+                  <p class="for-riders-schedule pl-5">Safe and Secure</p>
+                  <p class="for-riders-schedule-text pl-5">
+                    Drive with peace of mind knowing that both you and your
+                    passengers are <br />
+                    protected with our robust safety features and secure payment
+                    system
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- for drivers end -->
+
+    <!-- ride with us starts -->
+    <section class="bg-[#FBFAFB]">
+      <div
+        class="px-5 md:px-10 lg:px-20 py-20 justify-between flex items-center"
+      >
+        <div class="flex flex-col gap-8">
+          <h2 class="ride-with-us">Ride with Us</h2>
+          <p class="ride-with-us-text">
+            Need a ride? Download our app and enjoy reliable transportation
+            <br />
+            at your fingertips
+          </p>
+          <div class="flex gap-3 pt-2">
+            <a href="#">
+              <img src="images/appstore.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="images/playstore.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="hidden md:flex">
+          <img src="images/iphone-ride.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- ride with us ends -->
+
+    <!-- footer starts -->
+    <section class="bg-[#4B0A20]">
+      <div
+        class="flex flex-col gap-5 lg:flex-row px-5 md:px-10 lg:px-20 py-12 justify-between"
+      >
+        <div class="flex flex-col gap-5">
+          <h2 class="logo-head">CabLux.</h2>
+          <p class="logo-text">
+            Lorem ipsum dolor sit amet consectetur. <br />
+            Tellus facilisi non enim tincidunt habitasse <br />
+            etiam nibh ornare quis.
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-20">
+          <div class="flex flex-col gap-3">
+            <h6 class="footer-link-head">Company</h6>
+            <a href="#" class="footer-links">About Us</a>
+            <a href="#" class="footer-links">Features</a>
+            <a href="#" class="footer-links">Blog</a>
+            <a href="#" class="footer-links">Terms</a>
+            <a href="#" class="footer-links">Privacy</a>
+            <a href="#" class="footer-links">Cookies</a>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <h6 class="footer-link-head">Quick Links</h6>
+            <a href="#" class="footer-links">Ride</a>
+            <a href="#" class="footer-links">Drive</a>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <h6 class="footer-link-head text-white">Stay up to date</h6>
+            <div class="flex gap-4">
+              <input type="text" class="email-input" />
+              <button class="flex gap-1 justify-center items-center email-btn">
+                Download the App <img src="images/action-icon.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#20040D]">
+      <div
+        class="flex flex-col md:flex-row justify-center md:justify-between items-center h-auto md:h-[120px] py-5 md:py-0 gap-3 px-5 md:px-10 lg:px-20"
+      >
+        <div class="copyright text-white">
+          © 2024 CabLuxury. All rights reserved.
+        </div>
+        <div class="flex gap-5">
+          <img src="images/twitter.svg" alt="" />
+          <img src="images/linkedln.svg" alt="" />
+          <img src="images/facebook.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- footer ends -->
   </body>
 </html>
